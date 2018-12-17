@@ -10,6 +10,9 @@ This script test the Web Audio api. The convolution node is used for the testing
 
 var context;
 var panner;
+var musicSourceNode;
+var shaveSourceNode
+var sourceNode;
 var counterAZ;
 var comeback;
 var rawData;
@@ -34,8 +37,15 @@ function init(){
 		alert('Web Audio API is not supported in this browser');
 	}
 
-	var sourceNode = context.createMediaElementSource(document.getElementById("audioplayer"));
-	sourceNode.channelCount = 1;
+	musicSourceNode = context.createMediaElementSource(document.getElementById("audioplayerMusic"));
+	musicSourceNode.channelCount =1;
+
+	shaveSourceNode = context.createMediaElementSource(document.getElementById("audioplayerShave"));
+	shaveSourceNode.channelCount =1;
+
+	
+	sourceNode = musicSourceNode;
+	
 	loadHRIR();
 
 	counterAZ = 0;
@@ -90,19 +100,40 @@ function loadHRIR(){
 
 function playMusic(){
 
+  var t = teta(x,y);
+  if(t>180){
+  	t = t-360;
+  }
 
+  var dist = distRatio(x,y);
+ 
+  panner.changeSource(musicSourceNode);
+  panner.update(t,dist);
 
-	//var teta = parseInt(document.getElementById('angle').value,10);
-	//var dist = parseFloat(document.getElementById('distance').value,10);
-	panner.update(teta,dist);
-
-	audioplayer.play();
-
+  audioplayerMusic.play();
 
 }
 
-function pauseMusic(){
-	audioplayer.pause();
+function playShave(){
+
+  var t = teta(x,y);
+  if(t>180){
+  	t = t-360;
+  }
+
+  var dist = distRatio(x,y);
+
+  panner.changeSource(shaveSourceNode);
+ 
+  panner.update(t,dist);
+
+  audioplayerShave.play();
+
+}
+
+function pause(){
+	audioplayerMusic.pause();
+	audioplayerShave.pause();
 }
 
 
@@ -139,6 +170,11 @@ function Panner(sourceNode,context){
 		this.currentconv = t;
 	}
 
+	this.changeSource = function(newSource){
+		this.currentconv.changeSource(newSource);
+		this.targetconv.changeSource(newSource);
+	}
+
 
 
 
@@ -151,6 +187,7 @@ function Panner(sourceNode,context){
 
 
 function Convolver(sourceNode,context){
+	this.source = sourceNode;
 	this.convolver = context.createConvolver();
 	this.convolver.normalize = true;
 	this.gain = context.createGain();
@@ -206,6 +243,12 @@ function Convolver(sourceNode,context){
 		this.convolver.connect(this.gain);
 		this.gain.connect(context.destination);
 
+	}
+
+	this.changeSource = function(newSource){
+	this.source.disconnect(this.distancegain);
+    newSource.connect(this.distancegain);
+    this.source = newSource;
 	}
 
 
@@ -378,7 +421,7 @@ function myMove(e){
  
   panner.update(t,dist);
 
-  //audioplayer.play();
+  audioplayer.play();
   
  }
 }
