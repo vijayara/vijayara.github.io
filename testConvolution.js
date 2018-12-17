@@ -361,7 +361,7 @@ function distRatio(x,y){
 	var dy = CY -y;
 	var r = Math.sqrt(dx*dx + dy*dy);
 
-	return  (WIDTH/4)/r;
+	return  (WIDTH/2)/r;
 }
 
 function myMove(e){
