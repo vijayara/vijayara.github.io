@@ -94,7 +94,7 @@ function playMusic(){
 
 	//var teta = parseInt(document.getElementById('angle').value,10);
 	//var dist = parseFloat(document.getElementById('distance').value,10);
-	//panner.update(teta,dist);
+	panner.update(teta,dist);
 
 	audioplayer.play();
 
