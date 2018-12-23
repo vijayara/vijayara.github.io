@@ -3,8 +3,12 @@
 Author: Niroshan Vijayarasa 250 397
 Date: 15.12.2018
 
-This script test the Web Audio api. The convolution node is used for the testing. The idea is to have a single source feeded in a Convolution Node.
+The code was inspired by 
 
+For the back-end implementation: 
+https://codeandsound.wordpress.com/2015/04/08/implementing-binaural-hrtf-panner-node-with-web-audio-api/
+
+for the gui : http://jsfiddle.net/KZ99q/
 
 */
 
@@ -142,15 +146,15 @@ function Panner(sourceNode,context){
 	this.currentconv = new Convolver(sourceNode,context);
 	this.targetconv = new Convolver(sourceNode,context) ;
 
-//	this.targetconv.gain.gain =0;
+
 
 	var az = -80;
 	var el = 0;
-	//this.currentconv.fillBuffer(az,el);
+	
 	this.currentconv.connect();
 
 	
-	//this.targetconv.fillBuffer(az,el);
+	
 	this.targetconv.connect();	
 
 
@@ -321,8 +325,9 @@ function findAZBound(az){
 
 var canvas ;
 var ctx;
-var WIDTH = 800;
-var HEIGHT = 800;
+var SIDE = 600;
+var WIDTH = SIDE;
+var HEIGHT = SIDE;
 var RADIOUS = 20;
 var dragok = false;
 var CX = WIDTH/2;
@@ -331,13 +336,6 @@ var x = CX;
 var y = 50;
 
 
-
-/*window.onload = function() {
-init();
-canvas.onmousedown = myDown;
-canvas.onmouseup = myUp;
-
-} */
 
 
 function initcanvas() {
