@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -15,7 +15,7 @@
 
       $.ajax({
         type: "GET",
-        url: "/investor_profile.php",
+        url: "/agile_profile.php",
         data: {
           profile: true
         },
@@ -69,7 +69,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#"  style="color: white;"><span class="glyphicon glyphicon-envelope" id="notification" style="display: none;"></span></a>
+        <a class="nav-link" href="#"  style="color: white;"><i class="fa fa-envelope-o"></i></a>
       </li>
       
     </ul>
@@ -109,7 +109,7 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <form>
+          <form action="#">
             <div class="form-group">
               <label for="exampleFormControlTextarea1">Core Business</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
