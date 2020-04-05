@@ -1,6 +1,6 @@
 <div class= "row">
 	<div class="col-sm-8">
-		<h1> Institution </h1>
+		<h1> Needs entreprise </h1>
 	</div>	
 	<div class="col-sm-2">	
 		
@@ -13,41 +13,27 @@
 	<div class="col-sm-2">		
 	</div>	
 <div class="col-sm-8">		
-<div class="table-responsive" style="padding:30px;">
-	<h6>Matching</h6>
+	<form action="#">
+	    <div class="form-group">
+	      <label for="exampleFormControlInput1">Organization name</label>
+	      <input required="required"  class="form-control" id="exampleFormControlInput1" >
+	    </div>
+	   	<div class="form-group">
+	      <label for="exampleFormControlInput1">Address</label>
+	      <input required="required"  class="form-control" id="exampleFormControlInput1" >
+	    </div>
+	    <div class="form-group">
+	      <label for="exampleFormControlTextarea1">Description of the needs</label>
+	      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	    </div>
+	    <div class="form-group">
+	      <label for="example-date-input" class="col-2 col-form-label">Disponibility</label>
+	        <input required="required" class="form-control" type="date" value="2011-08-19" id="example-date-input">
+	      </div>
+	    </div>
 
-<table class="table table-hover">
-
-	<tr>
-	  <th>Description</th>
-	  <th>Institution</th>
-	  <th>Date</th>
-	  <th>Submit</th>
-	  
-	</tr>
-	<tr>	
-	  <td>Cleaning public transport vehicules</td>
-	  <td>Transport public Lausanne</td>
-	  <td>05.04.2020</td>
-	  <td><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-chevron-right"></span> </a></td>	  
-
-<!-- <button type="button" class="btn btn-info btn-lg" >Open Modal</button> -->
-
-
-	</tr>	
-
-	<tr>
-	  <td>Clean and deinsfect the buildings hallways</td>
-	  <td>Regi SA</td>
-	  <td>10.04.2020</td>
-	   <td><a data-toggle="modal" data-target="#myModal"> <span class="glyphicon glyphicon-chevron-right"></span></a></td>	  
-	</tr>	
-
-
-
-
-</table>
-
+	  <button type="submit" class="btn btn-primary" data-dismiss="modal" onclick=submit_need()>Submit</button>
+	</form>
 
 	</div>
 </div>
