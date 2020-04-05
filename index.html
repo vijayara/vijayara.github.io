@@ -1,38 +1,62 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-   <style>
-    body {
-      background-color: powderblue;
-      margin: auto;
-      text-align: center;
-    }
-    h1  {
-      color: blue;
-    }
-    p  {
-      color: red;
-    }
-   </style>
-  </head>
-  <script src="convolution.js"></script>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
 
+    function entreprise_profile(){
+
+      $("#main_panel").html("./investor_profile.html")
+
+    }   
+  </script>
+</head>
 <body>
-<h3>Binaural Audio Rendering Using HRTF</h3>
 
+<nav class="navbar navbar-expand-lg navbar-light" style ="background-color: red;">
+  <a class="navbar-brand" href="#"  style="color: white;">Chift</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<p><audio id="audioplayerMusic">  <source src="music.wav" type="audio/wav "></audio> <p></p></p>
-    <p><audio id="audioplayerShave">  <source src="shave.wav" type="audio/wav "></audio> <p></p></p> 
-<p><p><button onclick="playMusic();"> Play Music </button></p></p>
-<p><p><button onclick="playShave();"> Play Shaving razor </button></p></p>
-<p><p><button onclick="pause();"> Pause </button></p></p>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" onclick ="entreprise_profile()">
+        <a class="nav-link" href="#"  style="color: white;"> Agile Entreprise</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"  style="color: white;">Institution</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+  
+<div class="container" >
+  <div class="h-100 row align-items-center" id="main_panel">
+    <div class="col-sm-2">
 
-
-<canvas id="myCanvas" width="600" height="600" style="border:1px solid #000000;">
-    This text is displayed if your browser does not support HTML5 Canvas.
-</canvas>
+    </div>
+    <div class="col-sm-8" style="padding: 100px;">
+      <h3>Demonstration</h3>
+      <p>The Demonstration of the plateform is composed of 3 profiles
+        <ul>
+        
+          <li>Agile Entreprise: they will be able to list and choose a need to fill. They can apply to fill a need.</li>
+          <li>Instritution: they provide the immediate needs to fill in.</li>
+        </ul>
+      </p>
+    </div>
+    <div class="col-sm-2">
+    </div>
+  </div>
+</div>
 
 </body>
-
 </html>
