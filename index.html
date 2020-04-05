@@ -12,7 +12,17 @@
 
     function entreprise_profile(){
 
-      $("#main_panel").html("./investor_profile.html")
+      $.ajax({
+        type: "POST",
+        url: "/investor_profile.php",
+        data: {
+          profile: true
+        },
+        success: function(response) {
+            $("#main_panel").html(response);
+        
+        }
+      });
 
     }   
   </script>
