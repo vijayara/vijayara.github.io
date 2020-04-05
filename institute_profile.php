@@ -1,6 +1,6 @@
 <div class= "row">
 	<div class="col-sm-8">
-		<h1> Agile Profile  - Batmaid</h1>
+		<h1> Institution </h1>
 	</div>	
 	<div class="col-sm-2">	
 		
@@ -62,7 +62,9 @@
 	</div>	
 	<div class="col-sm-3">
 		<button class= "btn btn-primary" onclick=get_needs()>See all the needs</button>
-	</div>	
+	</di
+
+	v>	
 </div>	
 
 

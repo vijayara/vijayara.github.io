@@ -24,8 +24,9 @@
         
         }
       });
+    }   
 
-     function open_form(row){
+    function open_form(row){
       $("#form").show();
      } 
 
@@ -34,7 +35,20 @@
       $("#notification").show();
      }
 
-    }   
+
+     function get_needs(){
+            $.ajax({
+        type: "GET",
+        url: "/needs.php",
+        data: {
+          profile: true
+        },
+        success: function(response) {
+            $("#main_panel").html(response);
+        
+        }
+      });
+     }
   </script>
 </head>
 <body>
