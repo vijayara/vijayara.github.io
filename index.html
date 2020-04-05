@@ -26,6 +26,22 @@
       });
     }   
 
+
+    function institute_profile(){
+
+      $.ajax({
+        type: "GET",
+        url: "/institute_profile.php",
+        data: {
+          profile: true
+        },
+        success: function(response) {
+            $("#main_panel").html(response);
+        
+        }
+      });
+    }   
+
     function open_form(row){
       $("#form").show();
      } 
@@ -83,7 +99,7 @@
       <li class="nav-item" onclick ="entreprise_profile()">
         <a class="nav-link" href="#"  style="color: white;"> Ressource Entreprise</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" onclick=institute_profile()>
         <a class="nav-link" href="#"  style="color: white;">Entreprise Needs</a>
       </li>
       <li class="nav-item" onclick="get_needs();">

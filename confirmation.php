@@ -14,7 +14,7 @@
 	</div>	
 <div class="col-sm-8">		
 
-	<h3>The confederation has grated the autorisation to let Barmaid continue there activities by filling the gaps with theire expetise.</h3>
+	<h3>The confederation has grated the autorisation to let Barmaid continue there activities by filling the gaps with their expertise.</h3>
 
 </div>
 		
