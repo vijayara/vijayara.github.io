@@ -49,6 +49,21 @@
         }
       });
      }
+
+
+     function confirmation(){
+              $.ajax({
+          type: "GET",
+          url: "/confirmation.php",
+          data: {
+            profile: true
+          },
+          success: function(response) {
+              $("#main_panel").html(response);
+          
+          }
+        });
+     }
   </script>
 </head>
 <body>
