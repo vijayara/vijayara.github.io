@@ -78,6 +78,13 @@
 	   <td><a data-toggle="modal" data-target="#myModal"> <i class="glyphicon glyphicon-chevron-right"></i></a></td>	  
 	</tr>	
 
+	<tr>
+	  <td>Produce Medical Protective cloting</td>
+	  <td>CHUV</td>
+	  <td>09.04.2020</td>
+	   <td><a data-toggle="modal" data-target="#myModal"> <i class="glyphicon glyphicon-chevron-right"></i></a></td>	  
+	</tr>	
+
 
 
 
