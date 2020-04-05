@@ -29,16 +29,18 @@
 	  <td>Cleaning public transport vehicules</td>
 	  <td>Transport public Lausanne</td>
 	  <td>05.04.2020</td>
-	  <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button></td>	  
+	  <td><a data-toggle="modal" data-target="#myModal"> > </a></td>	  
 
-	  
+<!-- <button type="button" class="btn btn-info btn-lg" >Open Modal</button> -->
+
+
 	</tr>	
 
 	<tr>
 	  <td>Clean and deinsfect the buildings hallways</td>
 	  <td>Regi SA</td>
 	  <td>10.04.2020</td>
-	  <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button></td>	  
+	   <td><a data-toggle="modal" data-target="#myModal"> > </a></td>	  
 	</tr>	
 
 
@@ -59,8 +61,10 @@
 	<div class="col-sm-3">	
 	</div>	
 	<div class="col-sm-3">
-		<button class= "btn btn-primary">button</button>
-	</div>	
+		<button class= "btn btn-primary" onclick=get_needs()>See all the needs</button>
+	</di
+
+	v>	
 </div>	
 
 
