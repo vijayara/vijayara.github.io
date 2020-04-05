@@ -1,17 +1,19 @@
 <div class= "row">
-	<div class="col-sm-12">	
+	<div class="col-sm-2">
+	</div>	
+	<div class="col-sm-8">	
 		<h1> Agile Profile  - Batmaid</h1>
-	</div>
-</div>
+	
+
 
 
 <div class= "row">
 	<div class="col-sm-12">		
 
-<div class="table-responsive">
+<div class="table-responsive" style="padding:30px;">
 	<h6>Matching</h6>
 
-<table>
+<table class="table table-hover">
 
 	<tr>
 	  <th>Description</th>
@@ -19,7 +21,7 @@
 	  <th>Date</th>
 	  
 	</tr>
-	<tr>
+	<tr>	
 	  <td>Cleaning public transport vehicules</td>
 	  <td>Transport public Lausanne</td>
 	  <td>05.04.2020</td>	  
@@ -39,4 +41,7 @@
 
 	</div>
 		</div>
+</div>
+
+<div class="col-sm-2">
 </div>
