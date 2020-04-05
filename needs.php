@@ -79,12 +79,11 @@
 	</tr>	
 
 	<tr>
-	  <td>Produce Medical Protective cloting</td>
-	  <td>CHUV</td>
-	  <td>09.04.2020</td>
+	  <td>Horticulturist/Farmer out of the supermarket system</td>
+	  <td>Farmer Association</td>
+	  <td>13.04.2020</td>
 	   <td><a data-toggle="modal" data-target="#myModal"> <i class="glyphicon glyphicon-chevron-right"></i></a></td>	  
 	</tr>	
-
 
 
 
