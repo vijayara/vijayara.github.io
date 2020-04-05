@@ -22,14 +22,14 @@
 	  <th>Description</th>
 	  <th>Institution</th>
 	  <th>Date</th>
-	  <th></th>
+	  <th>Submit</th>
 	  
 	</tr>
 	<tr>	
 	  <td>Cleaning public transport vehicules</td>
 	  <td>Transport public Lausanne</td>
 	  <td>05.04.2020</td>
-	  <td><span class="glyphicon glyphicon-chevron-right" onclick=open_form()></span></td>	  
+	  <td><span class="glyphicon glyphicon-chevron-right" onclick=open_form(0)></span></td>	  
 
 	</tr>	
 
@@ -37,7 +37,7 @@
 	  <td>Clean and deinsfect the buildings hallways</td>
 	  <td>Regi SA</td>
 	  <td>10.04.2020</td>
-	  <td><span class="glyphicon glyphicon-chevron-right" onclick=open_form()></span></td>	  
+	  <td><span class="glyphicon glyphicon-chevron-right" onclick=open_form(1)></span></td>	  
 	</tr>	
 
 
@@ -58,7 +58,7 @@
 	<div class="col-sm-3">	
 	</div>	
 	<div class="col-sm-3">
-		<button class= "btn btn-primary"></button>
+		<button class= "btn btn-primary">button</button>
 	</div>	
 </div>	
 
