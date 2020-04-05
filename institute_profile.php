@@ -30,13 +30,13 @@
 	      <label for="example-date-input" class="col-2 col-form-label">Disponibility</label>
 	        <input required="required" class="form-control" type="date" value="2011-08-19" id="example-date-input">
 	      </div>
-	    </div>
+	    
 
 	  <button type="submit" class="btn btn-primary" data-dismiss="modal" onclick=submit_need()>Submit</button>
 	</form>
 
 	</div>
-</div>
+
 		
 <div class="col-sm-2"></div>
 </div>
