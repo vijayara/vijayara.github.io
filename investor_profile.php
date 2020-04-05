@@ -29,7 +29,7 @@
 	  <td>Cleaning public transport vehicules</td>
 	  <td>Transport public Lausanne</td>
 	  <td>05.04.2020</td>
-	  <td><a data-toggle="modal" data-target="#myModal"> > </a></td>	  
+	  <td><a data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-chevron-right"></span> </a></td>	  
 
 <!-- <button type="button" class="btn btn-info btn-lg" >Open Modal</button> -->
 
@@ -40,7 +40,7 @@
 	  <td>Clean and deinsfect the buildings hallways</td>
 	  <td>Regi SA</td>
 	  <td>10.04.2020</td>
-	   <td><a data-toggle="modal" data-target="#myModal"> > </a></td>	  
+	   <td><a data-toggle="modal" data-target="#myModal"> <span class="glyphicon glyphicon-chevron-right"></span></a></td>	  
 	</tr>	
 
 
