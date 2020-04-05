@@ -1,6 +1,6 @@
 <div class= "row">
 	<div class="col-sm-8">
-		<h1> Needs entreprise </h1>
+		<h1> Needs Enterprise </h1>
 	</div>	
 	<div class="col-sm-2">	
 		
