@@ -3,13 +3,15 @@
 	</div>	
 	<div class="col-sm-8">	
 		<h1> Agile Profile  - Batmaid</h1>
-	
-
-
+	</div>	
+	<div class="col-sm-2">
+	</div>	
+</div>	
 
 <div class= "row">
 	<div class="col-sm-12">		
-
+	</div>	
+<div class="col-sm-8">		
 <div class="table-responsive" style="padding:30px;">
 	<h6>Matching</h6>
 
@@ -40,8 +42,10 @@
 
 
 	</div>
-		</div>
+</div>
+		
+<div class="col-sm-2"></div>
 </div>
 
-<div class="col-sm-2">
-</div>
+
+
