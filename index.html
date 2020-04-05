@@ -29,6 +29,11 @@
       $("#form").show();
      } 
 
+
+     function receive_offer(){
+      $("#notification").show();
+     }
+
     }   
   </script>
 </head>
@@ -50,7 +55,7 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="#"  style="color: white;"><span class="glyphicon glyphicon-envelope"></span></a>
+        <a class="nav-link" href="#"  style="color: white;"><span class="glyphicon glyphicon-envelope" id="notification" style="display: none;"></span></a>
       </li>
       
     </ul>
@@ -107,7 +112,7 @@
                 </div>
               </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick=receive_offer()>Submit</button>
           </form>
         </div>
         <div class="modal-footer">
