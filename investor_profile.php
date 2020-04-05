@@ -29,7 +29,7 @@
 	  <td>Cleaning public transport vehicules</td>
 	  <td>Transport public Lausanne</td>
 	  <td>05.04.2020</td>
-	  <td><span class="glyphicon glyphicon-chevron-right" onclick=open_form(0)></span></td>	  
+	  <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" onclick=open_form(0)></span></td>	  
 
 	</tr>	
 
@@ -37,7 +37,7 @@
 	  <td>Clean and deinsfect the buildings hallways</td>
 	  <td>Regi SA</td>
 	  <td>10.04.2020</td>
-	  <td><span class="glyphicon glyphicon-chevron-right" onclick=open_form(1)></span></td>	  
+	  <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" onclick=open_form(1)></span></td>	  
 	</tr>	
 
 
