@@ -29,15 +29,16 @@
 	  <td>Cleaning public transport vehicules</td>
 	  <td>Transport public Lausanne</td>
 	  <td>05.04.2020</td>
-	  <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" onclick=open_form(0)></span></td>	  
+	  <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button></td>	  
 
+	  
 	</tr>	
 
 	<tr>
 	  <td>Clean and deinsfect the buildings hallways</td>
 	  <td>Regi SA</td>
 	  <td>10.04.2020</td>
-	  <td><span class="glyphicon glyphicon-chevron-right" aria-hidden="true" onclick=open_form(1)></span></td>	  
+	  <td><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button></td>	  
 	</tr>	
 
 
